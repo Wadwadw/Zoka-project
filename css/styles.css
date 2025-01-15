@@ -254,3 +254,38 @@ html {
     height: 85px;
 }
 
+.counter {
+    margin-top: 100px;
+}
+
+.counter__wrapper {
+    display: flex;
+    padding-top: 120px;
+}
+
+.counter__description {
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(26, 9, 60, 0.8);
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 125%;
+        color: #1a093c;
+    }
+}
+
+.counter__bg {
+    margin-top: 120px;
+    background-color: #F6F5FB;
+    height: 253px;
+    z-index: 2;
+}
+
+.counter__numbers {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
