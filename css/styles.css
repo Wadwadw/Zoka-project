@@ -106,6 +106,7 @@ html {
     font-weight: 500;
     font-size: 20px;
     color: #fff;
+    border-width: 0;
 }
 
 .main-button svg {
@@ -188,7 +189,7 @@ html {
     line-height: 125%;
     color: #1a093c;
     text-align: center;
-    
+
 }
 
 .cause__wraperr {
@@ -200,7 +201,7 @@ html {
 }
 
 .cause {
-    width:267px;
+    width: 267px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,33 +260,222 @@ html {
 }
 
 .counter__wrapper {
-    display: flex;
+    position: relative;
     padding-top: 120px;
+    display: flex;
+    z-index: 1;
+
+    img {
+        height: 550px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
 }
 
-.counter__description {
-    p {
-        font-weight: 400;
-        font-size: 18px;
-        color: rgba(26, 9, 60, 0.8);
-    }
+.counter__desc {
+    margin-left: 120px;
+}
+
+.counter__text {
+    margin-top: 20px;
+
     h3 {
         font-weight: 700;
         font-size: 48px;
         line-height: 125%;
         color: #1a093c;
     }
+
+    p {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(26, 9, 60, 0.8);
+    }
+}
+
+.counter-items {
+    margin-top: 180px;
+    display: flex;
+    width: 498px;
+    justify-content: space-between;
+    text-align: center;
+
+    h3 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 125%;
+        color: #1a093c;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(26, 9, 60, 0.8);
+    }
 }
 
 .counter__bg {
-    margin-top: 120px;
-    background-color: #F6F5FB;
+    position: absolute;
+    left: 0vh;
+    top: 488px;
+    width: 1440px;
     height: 253px;
-    z-index: 2;
+    background: #f6f5fb;
+    z-index: 0;
 }
 
-.counter__numbers {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
+.floral-design {
+    margin-top: 220px;
+}
+
+.floral-design__desc {
+    padding-top: 120px;
+
+    h3 {
+        width: 570px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 125%;
+        color: #1a093c;
+    }
+
+    p {
+        margin-top: 20px;
+        width: 398px;
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(26, 9, 60, 0.8);
+    }
+
+    button {
+        margin-top: 40px;
+    }
+}
+
+.floral-design__photos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.floral-photo__text {
+    p {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 125%;
+        color: #1a093c;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(26, 9, 60, 0.8);
+        }
+    }
+}
+
+.floral-photo__1 {
+    margin-top: 80px;
+}
+
+.floral-photo__2 {
+    margin-top: -80px;
+}
+
+.floral-photo__3 {
+    margin-top: -240px;
+}
+
+.our-works {
+    margin-top: 220px;
+}
+
+.our-works__desc {
+    h2 {
+        font-weight: 600;
+        font-size: 60px;
+        color: #1a093c;
+    }
+
+    p {
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+.our-works__photo {
+    margin-top: 43px;
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: repeat(3, 402px);
+    gap: 20px;
+
+    img {
+        width: 380px;
+        height: 402px;
+        object-fit: cover;
+    }
+}
+
+.get-started__wrapper {
+    padding-left: 100px;
+    padding-top: 146px;
+    margin-top: 190px;
+    border-radius: 100px;
+    background-color: #431898;
+    height: 600px;
+
+    img {
+        position: absolute;
+        left: 860px;
+        top: -100px;
+    }
+}
+
+.get-started__text {
+    width: 630px;
+
+    h2 {
+        font-weight: 600;
+        font-size: 64px;
+        color: #fff;
+    }
+
+    p {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.btn_inverce {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+}
+
+footer {
+    margin-top: 120px;
+    height: 80px;
+    div{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 20px;
+        color: #3c3842;
+    }
+    h3 {
+        opacity: 0.3;
+    }
+}
+
+.footer-nav {
+    width: 498px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
